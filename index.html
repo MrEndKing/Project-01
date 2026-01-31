@@ -40,6 +40,18 @@
     </section>
   </main>
 
+<button onclick="zmenFarbu()">Klikni ma</button>
+
+<script>
+let farby = ["black", "red", "green", "blue", "yellow"];
+
+function zmenFarbu() {
+  let nahodnyIndex = Math.floor(Math.random() * farby.length);
+  document.body.style.backgroundColor = farby[nahodnyIndex];
+  console.log("Farba pozadia zmenená na:", farby[nahodnyIndex]);
+}
+</script>
+
   <footer>
     <p>&copy; 2026 Broski</p>
   </footer>
